@@ -1,0 +1,6 @@
+resolver: lts-7.14
+packages:
+- '.'
+extra-deps:
+- flac-0.1.0
+- wave-0.1.3
