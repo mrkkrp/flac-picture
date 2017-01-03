@@ -45,6 +45,9 @@ build-type:           Simple
 description:          Support for writing picture to FLAC metadata blocks with JuicyPixels.
 extra-doc-files:      CHANGELOG.md
                     , README.md
+data-files:           audio-samples/*.flac
+                    , picture-samples/*.jpeg
+                    , picture-samples/*.png
 
 source-repository head
   type:               git
