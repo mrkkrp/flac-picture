@@ -40,9 +40,9 @@ maintainer:           Mark Karpov <markkarpov@openmailbox.org>
 homepage:             https://github.com/mrkkrp/flac-picture
 bug-reports:          https://github.com/mrkkrp/flac-picture/issues
 category:             Codec, Audio, Image
-synopsis:             Support for writing picture to FLAC metadata blocks with JuickPixels
+synopsis:             Support for writing picture to FLAC metadata blocks with JuicyPixels
 build-type:           Simple
-description:          Support for writing picture to FLAC metadata blocks with JuickPixels.
+description:          Support for writing picture to FLAC metadata blocks with JuicyPixels.
 extra-doc-files:      CHANGELOG.md
                     , README.md
 
