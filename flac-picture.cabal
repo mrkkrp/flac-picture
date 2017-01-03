@@ -58,6 +58,7 @@ flag dev
 library
   build-depends:      JuicyPixels      >= 3.2.6.5 && < 4.0
                     , base             >= 4.7 && < 5.0
+                    , bytestring       >= 0.2 && < 0.11
                     , flac             >= 0.1 && < 0.2
   exposed-modules:    Codec.Audio.FLAC.Metadata.Picture
   if flag(dev)
@@ -73,6 +74,7 @@ test-suite tests
   type:               exitcode-stdio-1.0
   build-depends:      JuicyPixels      >= 3.2.6.5 && < 4.0
                     , base             >= 4.7 && < 5.0
+                    , bytestring       >= 0.2 && < 0.11
                     , flac             >= 0.1 && < 0.2
                     , flac-picture     >= 0.1.0
                     , hspec            >= 2.0 && < 3.0
