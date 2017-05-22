@@ -8,7 +8,7 @@
 -- Portability :  portable
 --
 -- Juicy-Pixels-powered helpers to read\/write images to FLAC metadata
--- blocks. For maximal player support, use PNG or JPEG (we don't provide
+-- blocks. For best player support, use PNG or JPEG (we don't provide
 -- helpers for other formats at the time anyway).
 
 {-# LANGUAGE OverloadedStrings #-}
@@ -24,7 +24,7 @@ import Codec.Picture
 import Data.Word
 import qualified Data.ByteString.Lazy as BL
 
--- | Read specific picture from FLAC metadata as 'DynamicImage'.
+-- | Read specific type of picture from FLAC metadata as a 'DynamicImage'.
 
 retrieveImage
   :: PictureType
