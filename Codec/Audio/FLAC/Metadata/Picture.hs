@@ -1,6 +1,6 @@
 -- |
 -- Module      :  Codec.Audio.FLAC.Metadata.Picture
--- Copyright   :  © 2017 Mark Karpov
+-- Copyright   :  © 2017–2018 Mark Karpov
 -- License     :  BSD 3 clause
 --
 -- Maintainer  :  Mark Karpov <markkarpov92@gmail.com>

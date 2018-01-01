@@ -12,6 +12,6 @@ tell you what, with **Haskell** you can do it.
 
 ## License
 
-Copyright © 2017 Mark Karpov
+Copyright © 2017–2018 Mark Karpov
 
 Distributed under BSD 3 clause license.
