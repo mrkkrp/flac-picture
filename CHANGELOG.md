@@ -1,3 +1,7 @@
+## FLAC Picture 0.1.2
+
+* Test suite is compatible with `flac-0.2.0` and later.
+
 ## FLAC Picture 0.1.1
 
 * Improved documentation and metadata.
