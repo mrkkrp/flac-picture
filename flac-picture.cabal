@@ -31,7 +31,7 @@ library
   build-depends:      JuicyPixels      >= 3.2.6.5 && < 4.0
                     , base             >= 4.8 && < 5.0
                     , bytestring       >= 0.2 && < 0.11
-                    , flac             >= 0.1 && < 0.2
+                    , flac             >= 0.1 && < 0.3
   exposed-modules:    Codec.Audio.FLAC.Metadata.Picture
   if flag(dev)
     ghc-options:      -Wall -Werror
@@ -53,9 +53,8 @@ test-suite tests
   build-depends:      JuicyPixels      >= 3.2.6.5 && < 4.0
                     , base             >= 4.8 && < 5.0
                     , bytestring       >= 0.2 && < 0.11
-                    , data-default-class
                     , directory        >= 1.2.2 && < 1.4
-                    , flac             >= 0.1 && < 0.2
+                    , flac             >= 0.1 && < 0.3
                     , flac-picture
                     , hspec            >= 2.0 && < 3.0
                     , temporary        >= 1.1 && < 1.4

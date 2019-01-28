@@ -10,7 +10,6 @@ import Codec.Audio.FLAC.Metadata
 import Codec.Audio.FLAC.Metadata.Picture
 import Codec.Picture
 import Control.Monad
-import Data.Default.Class
 import Data.Function (on)
 import System.Directory
 import System.IO
@@ -71,3 +70,8 @@ imageShouldBe img0 img1 = do
   (shouldBe `on` imageWidth)  img0 img1
   (shouldBe `on` imageHeight) img0 img1
   (shouldBe `on` imageData)   img0 img1
+
+-- | A shortcut for 'defaultMetaSettings'.
+
+def :: MetaSettings
+def = defaultMetaSettings
