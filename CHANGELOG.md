@@ -1,3 +1,7 @@
+## Unreleased
+
+* Dropped support for GHC 7.10.
+
 ## FLAC Picture 0.1.2
 
 * Test suite is compatible with `flac-0.2.0` and later.
