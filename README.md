@@ -6,8 +6,14 @@
 [![Stackage LTS](http://stackage.org/package/flac-picture/badge/lts)](http://stackage.org/lts/package/flac-picture)
 [![Build Status](https://travis-ci.org/mrkkrp/flac-picture.svg?branch=master)](https://travis-ci.org/mrkkrp/flac-picture)
 
-I bet you always wanted to write a picture into FLAC metadata blocks. I'll
-tell you what, with **Haskell** you can do it.
+Support for writing picture to FLAC metadata blocks with `JuicyPixels`.
+
+## Contribution
+
+Issues, bugs, and questions may be reported in [the GitHub issue tracker for
+this project](https://github.com/mrkkrp/flac-picture/issues).
+
+Pull requests are also welcome.
 
 ## License
 
