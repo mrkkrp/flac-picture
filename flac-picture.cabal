@@ -40,7 +40,7 @@ library
     build-depends:
         JuicyPixels >=3.2.6.5 && <4.0,
         base >=4.12 && <5.0,
-        bytestring >=0.2 && <0.11,
+        bytestring >=0.2 && <0.12,
         flac >=0.1 && <0.3
 
     if flag(dev)
@@ -64,7 +64,7 @@ test-suite tests
     build-depends:
         JuicyPixels >=3.2.6.5 && <4.0,
         base >=4.12 && <5.0,
-        bytestring >=0.2 && <0.11,
+        bytestring >=0.2 && <0.12,
         directory >=1.2.2 && <1.4,
         flac >=0.1 && <0.3,
         flac-picture -any,
