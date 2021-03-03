@@ -5,7 +5,7 @@ license:         BSD3
 license-file:    LICENSE.md
 maintainer:      Mark Karpov <markkarpov92@gmail.com>
 author:          Mark Karpov <markkarpov92@gmail.com>
-tested-with:     ghc ==8.6.5 ghc ==8.8.4 ghc ==8.10.3
+tested-with:     ghc ==8.8.4 ghc ==8.10.4 ghc ==9.0.1
 homepage:        https://github.com/mrkkrp/flac-picture
 bug-reports:     https://github.com/mrkkrp/flac-picture/issues
 synopsis:
@@ -39,7 +39,7 @@ library
     default-language: Haskell2010
     build-depends:
         JuicyPixels >=3.2.6.5 && <4.0,
-        base >=4.12 && <5.0,
+        base >=4.13 && <5.0,
         bytestring >=0.2 && <0.12,
         flac >=0.1 && <0.3
 
@@ -63,7 +63,7 @@ test-suite tests
     default-language: Haskell2010
     build-depends:
         JuicyPixels >=3.2.6.5 && <4.0,
-        base >=4.12 && <5.0,
+        base >=4.13 && <5.0,
         bytestring >=0.2 && <0.12,
         directory >=1.2.2 && <1.4,
         flac >=0.1 && <0.3,
