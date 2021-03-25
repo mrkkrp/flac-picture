@@ -6,7 +6,7 @@
 [![Stackage LTS](http://stackage.org/package/flac-picture/badge/lts)](http://stackage.org/lts/package/flac-picture)
 ![CI](https://github.com/mrkkrp/flac-picture/workflows/CI/badge.svg?branch=master)
 
-Support for writing picture to FLAC metadata blocks with `JuicyPixels`.
+Support for writing pictures into FLAC metadata blocks with `JuicyPixels`.
 
 ## Contribution
 

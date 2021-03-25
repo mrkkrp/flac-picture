@@ -9,9 +9,9 @@
 -- Stability   :  experimental
 -- Portability :  portable
 --
--- Juicy-Pixels-powered helpers to read\/write images to FLAC metadata
+-- Juicy-Pixels-powered helpers to read\/write images into FLAC metadata
 -- blocks. For best player support, use PNG or JPEG (we don't provide
--- helpers for other formats at the time anyway).
+-- helpers for other formats anyway).
 module Codec.Audio.FLAC.Metadata.Picture
   ( retrieveImage,
     writeJpegPicture,
@@ -24,7 +24,7 @@ import Codec.Picture
 import qualified Data.ByteString.Lazy as BL
 import Data.Word
 
--- | Read specific type of picture from FLAC metadata as a 'DynamicImage'.
+-- | Read a picture of 'PictureType' from FLAC metadata as a 'DynamicImage'.
 retrieveImage ::
   PictureType ->
   FlacMeta (Either String DynamicImage)
@@ -34,7 +34,7 @@ retrieveImage pictureType = do
     Nothing -> return (Left "Picture not found")
     Just picture -> (return . decodeImage . pictureData) picture
 
--- | Write the given image into FLAC metadata block corresponding to
+-- | Write the given image into FLAC metadata block corresponding to a
 -- specific 'PictureType'.
 writeJpegPicture ::
   -- | Type of picture we're writing
@@ -57,7 +57,7 @@ writeJpegPicture pictureType q image =
           pictureData = BL.toStrict (encodeJpegAtQuality q image)
         }
 
--- | Write the given image into FLAC metadata block corresponding to
+-- | Write the given image into FLAC metadata block corresponding to a
 -- specific 'PictureType'.
 writePngPicture ::
   -- | Type of picture we're writing
