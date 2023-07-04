@@ -21,7 +21,7 @@ where
 
 import Codec.Audio.FLAC.Metadata
 import Codec.Picture
-import qualified Data.ByteString.Lazy as BL
+import Data.ByteString.Lazy qualified as BL
 import Data.Word
 
 -- | Read a picture of 'PictureType' from FLAC metadata as a 'DynamicImage'.

@@ -8,7 +8,7 @@ import Codec.Audio.FLAC.Metadata
 import Codec.Audio.FLAC.Metadata.Picture
 import Codec.Picture
 import Control.Monad
-import qualified Data.ByteString.Lazy as BL
+import Data.ByteString.Lazy qualified as BL
 import Data.Function (on)
 import System.Directory
 import System.IO
