@@ -5,7 +5,7 @@ license:         BSD-3-Clause
 license-file:    LICENSE.md
 maintainer:      Mark Karpov <markkarpov92@gmail.com>
 author:          Mark Karpov <markkarpov92@gmail.com>
-tested-with:     ghc ==9.2.8 ghc ==9.4.7 ghc ==9.6.2
+tested-with:     ghc ==9.4.7 ghc ==9.6.3 ghc ==9.8.1
 homepage:        https://github.com/mrkkrp/flac-picture
 bug-reports:     https://github.com/mrkkrp/flac-picture/issues
 synopsis:
@@ -38,9 +38,9 @@ library
     exposed-modules:  Codec.Audio.FLAC.Metadata.Picture
     default-language: GHC2021
     build-depends:
-        JuicyPixels >=3.2.6.5 && <4.0,
-        base >=4.15 && <5.0,
-        bytestring >=0.2 && <0.12,
+        JuicyPixels >=3.2.6.5 && <4,
+        base >=4.15 && <5,
+        bytestring >=0.2 && <0.13,
         flac >=0.1 && <0.3
 
     if flag(dev)
@@ -52,20 +52,20 @@ library
         ghc-options: -O2 -Wall
 
 test-suite tests
-    type:             exitcode-stdio-1.0
-    main-is:          Spec.hs
-    build-tools:      hspec-discover >=2.0 && <3.0
-    hs-source-dirs:   tests
-    other-modules:    Codec.Audio.FLAC.Metadata.PictureSpec
-    default-language: GHC2021
+    type:               exitcode-stdio-1.0
+    main-is:            Spec.hs
+    build-tool-depends: hspec-discover:hspec-discover >=2 && <3
+    hs-source-dirs:     tests
+    other-modules:      Codec.Audio.FLAC.Metadata.PictureSpec
+    default-language:   GHC2021
     build-depends:
-        JuicyPixels >=3.2.6.5 && <4.0,
-        base >=4.15 && <5.0,
-        bytestring >=0.2 && <0.12,
+        JuicyPixels >=3.2.6.5 && <4,
+        base >=4.15 && <5,
+        bytestring >=0.2 && <0.13,
         directory >=1.2.2 && <1.4,
         flac >=0.1 && <0.3,
         flac-picture,
-        hspec >=2.0 && <3.0,
+        hspec >=2 && <3,
         temporary >=1.1 && <1.4
 
     if flag(dev)
