@@ -1,6 +1,6 @@
-## Unreleased
+## FLAC Picture 0.1.3
 
-* Dropped support for GHC 8.6 and older.
+* Maintenance release with newer dependencies.
 
 ## FLAC Picture 0.1.2
 
