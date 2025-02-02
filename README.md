@@ -4,7 +4,7 @@
 [![Hackage](https://img.shields.io/hackage/v/flac-picture.svg?style=flat)](https://hackage.haskell.org/package/flac-picture)
 [![Stackage Nightly](http://stackage.org/package/flac-picture/badge/nightly)](http://stackage.org/nightly/package/flac-picture)
 [![Stackage LTS](http://stackage.org/package/flac-picture/badge/lts)](http://stackage.org/lts/package/flac-picture)
-![CI](https://github.com/mrkkrp/flac-picture/workflows/CI/badge.svg?branch=master)
+[![CI](https://github.com/mrkkrp/flac-picture/actions/workflows/ci.yaml/badge.svg)](https://github.com/mrkkrp/flac-picture/actions/workflows/ci.yaml)
 
 Support for writing pictures into FLAC metadata blocks with `JuicyPixels`.
 
