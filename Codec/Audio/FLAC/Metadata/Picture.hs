@@ -34,7 +34,7 @@ retrieveImage pictureType = do
     Nothing -> return (Left "Picture not found")
     Just picture -> (return . decodeImage . pictureData) picture
 
--- | Write the given image into FLAC metadata block corresponding to a
+-- | Write the given image into the FLAC metadata block corresponding to a
 -- specific 'PictureType'.
 writeJpegPicture ::
   -- | Type of picture we're writing
@@ -57,7 +57,7 @@ writeJpegPicture pictureType q image =
           pictureData = BL.toStrict (encodeJpegAtQuality q image)
         }
 
--- | Write the given image into FLAC metadata block corresponding to a
+-- | Write the given image into the FLAC metadata block corresponding to a
 -- specific 'PictureType'.
 writePngPicture ::
   -- | Type of picture we're writing
