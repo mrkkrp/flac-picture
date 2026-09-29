@@ -24,7 +24,7 @@ spec = around withSandbox $ do
       Right (ImageYCbCr8 pic'') <-
         (pure . decodeJpeg . BL.toStrict)
           (encodeJpegAtQuality 100 pic)
-      Just PictureData {..} <- runFlacMeta def path (retrieve $ Picture ptype)
+      Just PictureData{..} <- runFlacMeta def path (retrieve $ Picture ptype)
       pictureMimeType `shouldBe` "image/jpeg"
       pictureDescription `shouldBe` ""
       pictureWidth `shouldBe` fromIntegral (imageWidth pic)
@@ -37,7 +37,7 @@ spec = around withSandbox $ do
     it ("writes PNG picture and reads it back: " ++ show ptype) $ \path -> do
       Right (ImageRGB8 pic) <- readPng "picture-samples/lenna.png"
       runFlacMeta def path (writePngPicture ptype pic)
-      Just PictureData {..} <- runFlacMeta def path (retrieve $ Picture ptype)
+      Just PictureData{..} <- runFlacMeta def path (retrieve $ Picture ptype)
       pictureMimeType `shouldBe` "image/png"
       pictureDescription `shouldBe` ""
       pictureWidth `shouldBe` fromIntegral (imageWidth pic)
